@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #imageChanger{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body id="imageChanger">
+    
+    <h1>UNDER CONSTRUCTION</h1>
+
+
+    <script src="./assets/js/jquery.js"></script>
+    <script>
+        $().ready(()=>{
+            var i = 0
+
+            var images = [
+                './assets/images/img3.webp', 'assets/images/img1.jpg','assets/images/img2.jpg'
+            ];
+
+            var imageChanger = $('#imageChanger');
+            imageChanger.css('background-image', 'url("./assets/images/img3.webp")');
+            // imageChanger.css('background-repeat: no-repeat');
+
+            setInterval(() => {
+                imageChanger.fadeOut(1000, function(){
+                    imageChanger.css('background-image', 'url(' + images[i++] +')')
+                    imageChanger.fadeIn(1000)
+                })
+                if(1 == images.length)
+                i = 0
+            }, 5000);
+        })
+    </script>
+</body>
+</html>
