@@ -305,7 +305,7 @@ body{
 /* popup form styles  */
 .popup-form{
     width: 70%;
-    height: 400px;
+    height: 530px;
     display: none;
     margin: 100px auto;
     position: relative;
@@ -313,7 +313,7 @@ body{
 }
 .form-pop{
     width: 60%;
-    height: 400px;
+    height: 450px;
     margin: 10px auto;
     border-radius: 4px;
     background-color: #fff;
@@ -337,10 +337,25 @@ body{
     cursor: pointer;
 }
 
+.group-list-parent{
+    display: block;
+    padding: 10px;
+    /* border: 2px solid darkorange; */
+}
+
+.group-list-parent label{
+    margin: 5px;
+    color: #888888;
+    font-size: 13px;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
 .form-pop .form-group-list{
     display: flex;
     padding: 5px;
-    width: 100%;
+    width: 98%;
     height: 40px;
     margin: 5px;
     /* border: 1px solid red; */

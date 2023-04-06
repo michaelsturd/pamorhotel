@@ -242,7 +242,7 @@
 }
 
 .contact-section{
-    width: 50%;
+    width: 80%;
     height: 200px;
     padding: 10px;
     margin: 40px auto;
@@ -275,7 +275,7 @@
     width: 80%;
     height: 200px;
     display: flex;
-    padding: 10px;
+    padding: 8px;
     margin: 40px auto;
     align-items: center;
     justify-content: center;
@@ -292,7 +292,7 @@
 }
 .newsletters form{
     display: block;
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,7 +301,7 @@
     /* border: 1px solid #eee; */
 }
 .newsletters form input{
-    width: 90%;
+    width: 100%;
     font-size: 18px;
     letter-spacing: 2px;
     display: block;
