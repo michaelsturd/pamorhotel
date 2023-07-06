@@ -8,9 +8,15 @@
     <link rel="stylesheet" href="./icofont/icofont.css">
     <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="mediaquery.css">
+
+    <style>
+
+        
+    </style>
+
 </head>
 <body>
-    <div class="contact-head">
+    <!-- <div class="contact-head">
         <div class="contacts">
             <p>email: <span></span><a href="#"><i class="icofont-google-plus"></i> contact@pamorhotels.com</a></p>
             <p>Phone: <span></span><a href="#"><i class="icofont-phone"></i> +1 432 836299</a></p>
@@ -23,25 +29,30 @@
                 <li><a href="#"><i class="icofont-linkedin"></i></a></li>
             </ul>
         </div>
-    </div>
-    <div class="topnav">
-        <div class="logo">
-            <a href="/">
-                <img src="./assets/logo/pmh.png" alt="">
-            </a>
+    </div> -->
+    <div class="header-contact">
+        <!-- topnav starts here -->
+        <div class="topnav-fixed" id="topnav-fixed">
+            <div class="logo">
+                <a href="/">
+                    <img src="./assets/logo/pmh.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">events</a></li>
+                <li><a href="#">booking</a></li>
+                <li><a href="#">dinning</a></li>
+                <li><a href="#">rooms</a></li>
+            </ul>
+    
+            <div class="nav-button" id="nav-button">
+                <i class="icofont-navigation-menu"></i>
+            </div>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">events</a></li>
-            <li><a href="#">booking</a></li>
-            <li><a href="#">dinning</a></li>
-            <li><a href="#">rooms</a></li>
-        </ul>
-
-        <div class="nav-button" id="nav-button">
-            <i class="icofont-navigation-menu"></i>
-        </div>
+        <!-- topnav area ends here  -->
     </div>
+    
 
 
     <div class="mini-nav" id="mini-nav">
@@ -160,5 +171,31 @@
         </div>
     </div>
 
+    <script>
+        function changetopnav(){
+    var scrollvalue = window.scrollY;
+    var topbar =  document.getElementById('topnav-fixed');
+    var searchItem = document.getElementById('searchItem');
+    console.log(scrollvalue);
+    if(scrollvalue < 100){
+        topbar.classList.remove('topbg')
+        // alert("We have not scrolled yet")
+
+    }else{
+        topbar.classList.add('topbg')
+    }
+    // if (scrollvalue < 100) {
+    //     topbar.classList.remove('topbg');
+    //     searchItem.classList.remove('searchbarBg');
+
+    // }
+    // else{
+    //     topbar.classList.add('topbg');
+    //     searchItem.classList.add('searchbarBg');
+    // }
+}
+
+window.addEventListener('scroll', changetopnav);
+    </script>
 </body>
 </html>
