@@ -59,9 +59,9 @@ body{
 .topnav{
     display: flex;
     height: 80px;
-    padding: 26px;
+    padding: 16px;
     position: fixed;
-    width: 100%;
+    width: 98%;
     overflow: hidden;
     align-items: center;
     justify-content: space-between;
@@ -84,6 +84,7 @@ body{
 .topnav ul{
     list-style: none;
     display: flex;
+    padding: 10px;
     flex-direction: row;
 }
 
@@ -107,7 +108,44 @@ body{
     display: block;
     width: 100%;
     height: 400px;
-    background-color: blueviolet;
+    background-image: url(./assets/images/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    /* background-color: blueviolet; */
+}
+
+.header-contact .contact-content{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: rgba(0.0, 03.3, 20, 0.4);
+}
+
+.header-contact .contact-content .text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.header-contact .contact-content .text h2{
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.header-contact .contact-content .text p{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
 
 .topnav-fixed{
@@ -117,8 +155,8 @@ body{
     color: #fff;
     /*background-color: #edd908;*/
     height: 70px;
-    border-bottom: 2px solid grey;
-    padding: 10px;
+    
+    padding: 16px;
     overflow: hidden;
     z-index: 999;
     transition: .3s all ease-in;
@@ -127,7 +165,7 @@ body{
 }
 
 .topnav-fixed .logo img{
-    width: 40%;
+    width: 30%;
 }
 
 .topnav-fixed ul{
@@ -155,6 +193,7 @@ body{
 .topbg{
     transition: all ease .3s;
     background-color: #000;
+    border-bottom: 2px solid grey;
 }
 
 
@@ -752,17 +791,18 @@ body{
 /* contact page style */
 .contact-wrapper{
     display: block;
-    width: 60%;
-    height: 200px;
-    margin: 20px auto;
+    width: 96%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0px auto;
     box-shadow: 0px 5px 15px 0px #eeeeee;
     background-color: #fff;
 }
 
 .contact-wrapper .contact-details{
-    width: 70%;
-    height: 300px;
-    padding: 10px;
+    width: 100%;
+    height: 500px;
+    padding: 0px;
     margin: 10px 15px auto;
     /* border: 1px solid green; */
 }
@@ -779,20 +819,65 @@ body{
     margin: 5px;
 }
 
+.contact-address{
+    padding: 20px;
+    height: 600px;
+    /* background-color: red; */
+    border: 1px solid #eee;
+}
+
+.contact-address .contact-child{
+    display: flex;
+    padding: 20px;
+    align-items: flex-start baseline;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-address .contact-child .address-icons{
+    padding: 5px;
+}
+
+.contact-address .contact-child .address-icons i{
+    color: #bda30b;
+    font-size: 59px;
+}
+
+.contact-address .contact-child h2, p{
+    color: #adacac;
+}
+
+.contact-address .titles{
+    padding: 20px;
+}
+
+.contact-address .contact-child li{
+    list-style: none;
+    color: #adacac;
+    padding: 5px;
+}
 .contact-form{
-    display: block;
-    width: 57%;
+    display: flex;
+    width: 90%;
     height: 680px;
     padding: 20px;
     margin: 10px auto;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px 0px #ddd;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* background-color: #fff; */
+    /* box-shadow: 0px 2px 5px 0px #ddd; */
 }
 
 .contact-form form{
     display: block;
-    width: 98%;
-    margin: 10px auto;
+    width: 48%;
+    /* margin: 10px auto; */
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    /* box-shadow: 0px 2px 5px 0px #ddd; */
+    border: 1px solid #eee;
 }
 
 .contact-form form input{
@@ -803,8 +888,10 @@ body{
     border-left: none;
     border-right: none;
     border-radius: none;
+    border-bottom: 1px solid #eee;
     padding: 14px 16px;
 }
+
 .contact-form form input[type=submit]{
     display: block;
     color: #000;
@@ -818,7 +905,11 @@ body{
 .contact-form form textarea{
     display: block;
     width: 80%;
-    border: 3px solid #444;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: none;
+    border-bottom: 2px solid #eee;
     outline: none;
     margin-top: 20px;
     padding: 14px 16px;
